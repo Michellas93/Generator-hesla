@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faebd7;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+#btn {
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  background-color: #f1c68e;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#priklad,
+#passLength {
+  width: 150px;
+  height: 25px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
+  border-color: #f1c68e;
+}
+
+#passLength,
+#number,
+#lower,
+#upper,
+#symbol,
+#btn {
+  margin: 20px;
+}
+
+#priklad {
+  padding-bottom: 15px;
+  width: 330px;
+  height: 25px;
+  border-radius: 20px;
+  border-color: #f1c68e;
+}
