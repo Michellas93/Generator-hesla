@@ -1,58 +1,80 @@
 body {
-  font-family: "Monda", sans-serif;
-  background-color: rgb(143, 136, 136);
+	font-family: "Monda", sans-serif;
+	background-color: #ffff;
+	display: flex;
+	justify-content: center;
+}
+* {
+	font-family: "Nunito Sans", sans-serif;
+}
+.container {
+	width: 50vw;
+	height: 80vh;
+	margin-top: 4rem;
+	text-align: center;
+	background-color: #8a9886;
+	border-radius: 0.5rem;
 }
 h1 {
-  text-align: center;
-  color: white;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+.container:hover {
+	box-shadow: 5px 5px 15px 15px #e1e9df;
 }
 .form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  align-items: center;
-  color: white;
+	margin-top: 4rem;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+.box__form {
+	display: flex;
+	justify-content: space-between;
+}
+label {
+	font-size: 25px;
+	padding: 0.5rem;
+	margin-bottom: 10px;
+}
+input {
+	width: 20px;
+	height: 20px;
+	margin: 15px;
 }
 #btn {
-  width: 100px;
-  height: 40px;
-  display: block;
-  margin: 0 auto;
-  background-color: #b5b4b3;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
+	width: 150px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	background-color: #ffff;
+	color: #8a9886;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	cursor: pointer;
 }
-#priklad,
-#passLength {
-  width: 150px;
-  height: 25px;
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  font-size: 18px;
-  text-align: center;
-  border-color: #7e7b78;
+#btn:hover {
+	background-color: #ebf3e9;
 }
-
-#passLength,
-#number,
-#lower,
-#upper,
-#symbol {
-  margin: 20px;
-  color: black;
-}
-
 #priklad {
-  padding-bottom: 15px;
-  width: 330px;
-  height: 25px;
-  border-radius: 20px;
-  border-color: #7b7772;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #fff;
+	color: #8a9886;
+	border-radius: 15px;
+	font-size: 20px;
+	width: 330px;
+	height: 25px;
+	border-radius: 5px;
+}
+#passLength {
+	width: 70px;
+	height: 50px;
+	color: #8a9886;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
 }

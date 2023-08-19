@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monda&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Generetor hesla</title>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <h1>Generátor hesla</h1>
-    <form class="form">
-      <label> Zvolte délku hesla </label>
-      <input id="passLength" type="number" value="0" min="0" max="20" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,200;1,6..12,700;1,6..12,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Generetor hesla</title>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Generátor hesla</h1>
 
-      <label>Zvolte si čísla (1,2,3...)</label>
-      <input id="number" type="checkbox" />
-
-      <label>Zvolte si malá písmena (a,b,c..)</label>
-      <input id="lower" type="checkbox" />
-
-      <label>Zvolte si velká písmena (A,B,C...)</label>
-      <input id="upper" type="checkbox" />
-
-      <label>Zvolte znak (@,&,$...)</label>
-      <input id="symbol" type="checkbox" />
-
-      <button id="btn">potvrď</button>
-    </form>
-    <div id="priklad"></div>
-  </body>
+			<form class="form">
+				<div class="container__form">
+					<div class="box__form">
+						<label> Zvolte délku hesla </label>
+						<input id="passLength" type="number" value="0" min="0" max="20" />
+					</div>
+					<div class="box__form">
+						<label>Zvolte si čísla (1,2,3...)</label>
+						<input id="number" type="checkbox" />
+					</div>
+					<div class="box__form">
+						<label>Zvolte si malá písmena (a,b,c..)</label>
+						<input id="lower" type="checkbox" />
+					</div>
+					<div class="box__form">
+						<label>Zvolte si velká písmena (A,B,C...)</label>
+						<input id="upper" type="checkbox" />
+					</div>
+					<div class="box__form">
+						<label>Zvolte znak (@,&,$...)</label>
+						<input id="symbol" type="checkbox" />
+					</div>
+					<button id="btn">potvrď</button>
+				</div>
+			</form>
+			<div id="priklad"></div>
+		</div>
+	</body>
 </html>
